@@ -12,6 +12,13 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-// Additional php code goes here
+// Change "project" slug to "work"
+
+function et_projects_custom_slug( $slug ) {
+    $slug = array( 'slug' => 'work' );
+
+    return $slug;
+}
+add_filter( 'et_project_posttype_rewrite_args', 'et_projects_custom_slug', 10, 2 );
 
 ?>
