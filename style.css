@@ -5,8 +5,11 @@
  Author:         Sunjay Armstead
  Author URI:     https://www.sunjayarmstead.com/
  Template:       Divi
- Version:        Version: 4.3.2
+ Version:        Version: 1.0.2
 */
  
-/* =Theme customization starts here
-------------------------------------------------------- */
+/* Make bottom margin in project posts 0px */
+
+article.project {
+    margin-bottom: 0 !important;
+}
